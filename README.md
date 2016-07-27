@@ -1,0 +1,2 @@
+# wbid
+theme wapblog.id
