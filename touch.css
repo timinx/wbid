@@ -1,0 +1,301 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #ededed;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+}
+a {
+  color: #900;
+  text-decoration: none;
+}
+nav#wb-navbar {
+  background: #bd0d0d;
+  background-image: linear-gradient(#cd0d0d,#bd0d0d,#ad0d0d);
+  line-height: 50px;
+  border-bottom: 3px solid #900;
+}
+nav#wb-navbar ul.small-mode,
+nav#wb-navbar ul.small-search {
+  display: none;
+}
+nav#wb-navbar ul.full-width li {
+  display: inline-block;
+}
+nav#wb-navbar ul li a {
+  color: #fff;
+  display: block;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+nav#wb-navbar ul.full-width li.wb-brand,
+nav#wb-navbar ul.small-mode li.wb-brand {
+  border-right: 1px solid #900;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+nav#wb-navbar ul.full-width li.wb-item a:hover {
+  background: #900;
+}
+header#wb-header {
+  border-bottom: 1px solid #dedede;
+  text-align: center;
+}
+header#wb-header h1.wb-heading,
+header#wb-header h2.wb-description,
+header#wb-header .wb-description,
+header#wb-header .wb-heading {
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 4px;
+  font-size: 18px;
+}
+nav#wb-navbar ul.small-search input.wb-search{
+  border: 1px solid #900;
+  padding: 5px;
+  width: 100%;
+  border-radius: 3px;
+}
+nav#wb-navbar ul.small-search button,
+#wb-new-comment .btn.btn-comment,
+#wb-new-guestbook .btn.btn-comment,
+#wb-sidebar .item-searchbox ul.sidebar-item-list li button.btn {
+  width: 100%;
+  padding: 5px;
+  background: #cd0d0d;
+  border: 1px solid #900;
+  color: #fff;
+  border-radius: 3px;
+}
+#wb-new-comment .wb-text,
+#wb-new-guestbook .wb-text,
+#wb-new-comment .wb-textarea,
+#wb-new-guestbook .wb-textarea,
+#wb-sidebar .item-searchbox ul.sidebar-item-list li input.wb-text {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  border-bottom: 3px solid #dedede;
+}
+#wb-new-comment .wb-text:hover,
+#wb-new-comment .wb-textarea:hover,
+#wb-new-comment .wb-text:focus,
+#wb-new-comment .wb-textarea:focus,
+#wb-new-guestbook .wb-text:hover,
+#wb-new-guestbook .wb-textarea:hover,
+#wb-new-guestbook .wb-text:focus,
+#wb-new-guestbook .wb-textarea:focus {
+  border: 1px solid #900;
+  border-bottom: 3px solid #900;
+}
+footer#wb-footer {
+  background: #bd0d0d;
+  text-align: center;
+  color: #fff;
+  border-top: 10px solid #900;
+}
+footer#wb-footer a {
+  color: #fff;
+  font-weight: bold;
+}
+footer#wb-footer div {
+padding:5px;
+border-bottom:1px solid #900;
+}
+#wb-wrapper {
+margin:10px;
+padding: 4px;
+background: #fff;
+border: 1px solid #dedede;
+border-radius: 4px;
+}
+#wb-wrapper h3.wb-title-page {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 5px;
+  padding: 6px;
+  border: 1px solid #dedede;
+  color: #090;
+  border-radius: 4px;
+}
+#wb-wrapper h3.wb-title-page i {
+  font-weight: bold;
+  font-style: normal;
+}
+#wb-wrapper section#wb-content,
+#wb-wrapper section#wb-sidebar {
+float:left;
+padding:auto 5px;
+}
+#wb-wrapper section#wb-sidebar {
+width:35%;
+}
+#wb-wrapper section#wb-content {
+width:65%;
+}
+#wb-sidebar h3,
+#wb-comment h3,
+#wb-guestbook h3 {
+padding: 8px;
+text-align:center;
+background: #bd0d0d;
+border-radius: 4px;
+color:#fff;
+}
+#wb-sidebar ul {
+list-style: none;
+}
+#wb-sidebar ul li {
+margin: 1px;
+padding: 4px;
+border: 1px solid #dedede;
+border-radius: 3px;
+}
+article.wb-post,
+#wb-comment .wb-comment-list,
+#wb-new-comment,
+#wb-new-guestbook,
+#wb-guestbook .wb-gb-list {
+margin:3px;
+border: 1px solid #ededed;
+border-radius: 4px;
+padding: 4px;
+border-bottom: 3px solid #dedede;
+}
+article.wb-post header,
+#wb-comment .wb-comment-list .wb-comment-list-header,
+#wb-guestbook .wb-gb-list .wb-gb-list-header {
+border-bottom: 1px solid #dedede;
+}
+article.wb-post footer,
+#wb-comment .wb-comment-list .wb-comment-list-meta,
+#wb-guestbook .wb-gb-list .wb-gb-list-meta {
+background: #ededed;
+padding: 5px;
+margin: 0 -4px -4px -4px;
+}
+article.wb-post footer .readmore,
+article.wb-post footer .comment-count {
+background: #cdcdcd;
+padding:5px;
+display: inline-block;
+color: #900;
+}
+#wb-pagination {
+  text-align: center;
+}
+#wb-pagination a,
+#wb-pagination span {
+  display: inline-block;
+  margin: 2px;
+  padding: 5px;
+  background: #ededed;
+  border: 1px solid #dedede;
+  border-radius: 3px;
+}
+a span.sh-hidden {
+  display: none;
+}
+a.sh-fb,
+a.sh-tw,
+a.sh-gp {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+}
+a.sh-fb {
+  background: #07a;
+}
+a.sh-gp {
+  background: #c00;
+}
+a.sh-tw {
+  background: #0bd;
+}
+.wb-not {
+  padding: 5px;
+  margin: 2px;
+  padding-left: 8px;
+  border-left-style: solid;
+  border-left-width: 3px;
+}
+.wb-not.not-info {
+  border-left-color: #0b8bbd;
+}
+.wb-not.not-err {
+  border-left-color: #900;
+}
+.wb-not.not-war {
+  border-left-color: #d70;
+}
+.wb-not.not-suc {
+  border-left-color: #0a0;
+}
+.padd5 {
+  padding: 5px;
+}
+.w35,
+.w65 {
+  display: inline-block;
+}
+.w35 {
+  width: 35%;
+}
+.w65 {
+  width: 65%;
+}
+.wb-floatleft {
+  float: left;
+}
+.wb-floatright {
+  float: right;
+}
+.wb-clear {
+  clear: both;
+}
+
+@media (max-width: 600px)
+  {
+    nav#wb-navbar ul.small-mode {
+      display: block;
+    }
+    nav#wb-navbar ul.full-width {
+      display: none;
+    }
+    nav#wb-navbar ul.small-mode li {
+      display: inline-block;
+    }
+    nav#wb-navbar ul.full-width.menu-active,
+    nav#wb-navbar ul.small-search.small-search {
+      border-top: 1px solid #900;
+    }
+    nav#wb-navbar ul.full-width.menu-active,
+    nav#wb-navbar ul.full-width.menu-active li,
+    nav#wb-navbar ul.small-search.search-active {
+      display: block;
+    }
+    nav#wb-navbar ul.full-width.menu-active li.wb-brand {
+      display: none;
+    }
+    nav#wb-navbar ul.small-mode li.wb-float-right {
+      float: right;
+    }
+    #wb-wrapper section#wb-content,
+    #wb-wrapper section#wb-sidebar {
+      float:none;
+      width:100%;
+    }
+    .hidden-small {
+      display: none;
+    }
+  }
